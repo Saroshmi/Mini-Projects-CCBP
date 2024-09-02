@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+body {
+    margin: 0px;
+}
+
+.content {
+    margin-left: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width:899px) {
+    .bg-container {
+        background-image: url('https://assets.ccbp.in/frontend/intermediate-rwd/fairpods-darkpink-bg.png');
+        background-size: cover;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .bg-container {
+        background-image: url('https://assets.ccbp.in/frontend/intermediate-rwd/fairpods-blue-bg.png');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .bg-container img {
+        order: 1;
+        width: 300px;
+        height: 400px;
+    }
+}
+
+.bg-container img {
+    height: 250px;
+    width: 180px;
+    align-self: center;
+    margin: 40px;
+    margin-left: 70px;
+    padding: 20px;
+}
+
+.bg-container .logo {
+    color: #8e62d9;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.bg-container h1 {
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.bg-container p {
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.button {
+    background-color: #ffdda9;
+    border-radius: 40px;
+    width: 200px;
+    text-align: center;
+    color: #334155;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+}
